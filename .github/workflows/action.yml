@@ -1,0 +1,13 @@
+name: Changed column
+
+on: projects_v2_item
+
+jobs:
+  changed_col:
+    runs-on: ubuntu-latest
+
+    steps:
+      - env:
+          EVENT_CONTEXT: ${{ toJSON(github.event) }}
+        run: |
+          echo $EVENT_CONTEXT
