@@ -1,6 +1,6 @@
 name: Changed column
 
-on: projects_v2
+on: project_card
 
 jobs:
   changed_col:
